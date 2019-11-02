@@ -118,7 +118,7 @@
 
 
 
-  <title>SysMaster</title>
+  <title>AndroidStudio自定义模板 | SysMaster</title>
   
 
 
@@ -137,8 +137,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -269,9 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -301,9 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/11/02/AndroidStudio%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF/" itemprop="url">AndroidStudio自定义模板</a></h1>
+          <h1 class="post-title" itemprop="name headline">AndroidStudio自定义模板</h1>
         
 
         <div class="post-meta">
@@ -351,9 +348,7 @@
       
 
       
-        
-          
-            <h2 id="1、模板文件结构"><a href="#1、模板文件结构" class="headerlink" title="1、模板文件结构"></a>1、模板文件结构</h2><p>AndroidStudio中模板全部放在<font color='red'>/plugins/android/lib/templates/</font>中</p>
+        <h2 id="1、模板文件结构"><a href="#1、模板文件结构" class="headerlink" title="1、模板文件结构"></a>1、模板文件结构</h2><p>AndroidStudio中模板全部放在<font color='red'>/plugins/android/lib/templates/</font>中</p>
 <ul>
 <li>template.xml(<font color='red'>创建面板获取输入参数</font>)</li>
 <li>globals.xml.ftl(<font color='red'>全局变量参数</font>)</li>
@@ -413,8 +408,6 @@
 <p><a href="https://blog.csdn.net/Marine_snow/article/details/79893509" target="_blank" rel="noopener">https://blog.csdn.net/Marine_snow/article/details/79893509</a></p>
 <p><a href="https://www.jianshu.com/p/329c87049750" target="_blank" rel="noopener">https://www.jianshu.com/p/329c87049750</a></p>
 
-          
-        
       
     </div>
     
@@ -431,12 +424,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -446,10 +439,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -457,6 +451,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -477,8 +475,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -534,6 +541,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、模板文件结构"><span class="nav-number">1.</span> <span class="nav-text">1、模板文件结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1、template-xml"><span class="nav-number">1.1.</span> <span class="nav-text">1.1、template.xml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2、globals-xml-ftl"><span class="nav-number">1.2.</span> <span class="nav-text">1.2、globals.xml.ftl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3、recipe-xml-ftl"><span class="nav-number">1.3.</span> <span class="nav-text">1.3、recipe.xml.ftl</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#标签说明："><span class="nav-number">1.3.0.1.</span> <span class="nav-text">标签说明：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、示例"><span class="nav-number">2.</span> <span class="nav-text">2、示例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1、template-xml的编写"><span class="nav-number">2.1.</span> <span class="nav-text">2.1、template.xml的编写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2、用到的java类"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、用到的java类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、用的到布局ftl"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、用的到布局ftl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4、recipe-xml-ftl"><span class="nav-number">2.4.</span> <span class="nav-text">2.4、recipe.xml.ftl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考链接"><span class="nav-number">2.5.</span> <span class="nav-text">参考链接</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -663,6 +686,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
 
   
 
